@@ -184,7 +184,7 @@ app.post("/forgetPassword", async function (request, response) {
     //Create Transporter
     const linkForUser = `${process.env.MAIL_PASSWORD}/reset-password/${userFromDB._id}/${randomString}`;
     let transporter = nodemailer.createTransport({
-      host: "smtppro.gmail.in",
+      host: "smtppro.gmail.com",
       secure: true, // use SSL
       port: 465,
       auth: {
